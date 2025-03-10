@@ -25,6 +25,7 @@ a
 
 ### actual output
 
+```
 > @ reproduce /tmp/20.35
 > node --import @swc-node/register/esm-register a/test.ts
 
@@ -46,3 +47,13 @@ Debugger attached.
 ```
 
 Same also happens with pnpm! not just yarn.
+
+## without vscode
+
+Also happens when using chrome as debugger:
+
+```
+node --inspect --inspect-brk --import @swc-node/register/esm-register a/test.ts
+```
+
+Then open chrome to about://inspect and press "continue" on the breakpoint. it hangs. without libsql import it's fine
