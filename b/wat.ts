@@ -4,9 +4,5 @@ const logger = pino({
   hooks: {},
   transport: {
     target: "pino-pretty",
-    options: {
-      messageFormat: "{module}: {msg}",
-      ignore: "module,pid,hostname",
-    },
   },
 });

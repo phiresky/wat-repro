@@ -5,6 +5,8 @@
     "@anthropic-ai/sdk": "^0.39.0",
     "@libsql/client": "^0.14.0",
     "b": "workspace:^",
-    "drizzle-orm": "^0.40.0"
+    "drizzle-orm": "^0.40.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0"
   }
 }

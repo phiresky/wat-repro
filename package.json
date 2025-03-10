@@ -1,9 +1,16 @@
 {
-	"dependencies": {
-		"@swc-node/register": "^1.10.9"
-	},
-	"scripts": {
-		"reproduce": "node --import @swc-node/register/esm-register a/test.ts"
-	},
-	"packageManager": "pnpm@10.6.1+sha512.40ee09af407fa9fbb5fbfb8e1cb40fbb74c0af0c3e10e9224d7b53c7658528615b2c92450e74cfad91e3a2dcafe3ce4050d80bda71d757756d2ce2b66213e9a3"
+  "dependencies": {
+    "@swc-node/register": "^1.10.9",
+    "@swc/core": "^1.11.8",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "workspaces": [
+    "a",
+    "b"
+  ],
+  "scripts": {
+    "reproduce": "node --import @swc-node/register/esm-register a/test.ts"
+  },
+  "packageManager": "yarn@4.7.0+sha512.5a0afa1d4c1d844b3447ee3319633797bcd6385d9a44be07993ae52ff4facabccafb4af5dcd1c2f9a94ac113e5e9ff56f6130431905884414229e284e37bb7c9"
 }
