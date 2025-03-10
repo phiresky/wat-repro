@@ -1,0 +1,10 @@
+{
+  "name": "a",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@libsql/client": "^0.14.0",
+    "b": "workspace:^",
+    "drizzle-orm": "^0.40.0"
+  }
+}
